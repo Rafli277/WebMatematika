@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Website Matematika</title>
+
+    <!-- logo title -->
+    <link rel="icon" href="Asset/icon matematika.png">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Belajar Matematika</a>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+
+        <!-- home -->
+        <section class="home" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Website Belajar Matematika
+                    <br>
+                    <span class="home__title-color"> Belajar Bangun Datar dan Bangun Ruang</span>
+                </h1>
+                <section id="about">
+                    <div class="container">
+                        <div class="row text-center mb-3">
+                            <div class="col">
+                                <h2>Bangun ruang dan Bangun datar?</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center fs-4 text-center">
+                            <div class="col-md-3">
+                                <p>Apa itu Bangun Ruang?</p>
+                                <p>Bangun ruang merupakan suatu bangun tiga dimensi yang memiliki ruang,volume, isi dan
+                                    juga sisi-sisi yang membatasinya.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>Apa itu Bangun Datar?</p>
+                                <p>Bangun datar adalah sebutan untuk bangun-bangun dua dimensi. Datar merupakan sebuah
+                                    bidang datar yang dibatasi oleh
+                                    garis lurus ataupun garis lengkung.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- Work -->
+        <section class="work section" id="work">
+            <h2 class="section-title">Pembelajaran</h2>
+            <h2 class="about__subtitle"> Silahkan Pilih untuk Pembelajaran </p>
+
+                <div class="work__continer bd-grid">
+                    <div class="work__img">
+                        <a href="bd.html" target="_blank">
+                            <img src="Asset/2.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="br.html" target="_blank">
+                            <img src="Asset/3.jpg" alt=""></a>
+                    </div>
+                    <h2 class="section-title">Kuis</h2>
+                    <div class="work__img">
+                        <a href="kuis.html" target="_blank">
+                            <img src="Asset/quiz.jpeg" alt=""></a>
+                    </div>
+                </div>
+        </section>
+        <!-- End Work -->
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Kritik dan Saran</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                    <strong>Thankyou!</strong> your message has been received.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <form name="Contact_Form" action="" class="contact__form">
+                    <input name="nama" type="text" id="name" placeholder="Nama" class="contact__input">
+                    <input name="email" type="email" id="email" placeholder="Email" class="contact__input">
+                    <textarea name="pesan" placeholder="Pesan" id="pesan" cols="0" rows="10"
+                        class="contact__input"></textarea>
+                    <button type="submit" class="contact__button button">Send</button>
+
+                    <!-- <input type="button" value="submit" class="contact__button button"> -->
+                </form>
+            </div>
+        </section>
+        <!-- End Contact -->
+
+
+    </main>
+    <!-- Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main Js -->
+    <script src="main.js"></script>
+
+    <!-- Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Form submit -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwByepowFdb18SI5-0kv0l0oC1hpcWxgolQOiUtJrI6xi5PD7cEl8lZGn6wUEXD-vtr/exec'
+        const form = document.forms['Contact_Form']
+        const myalert = document.querySelector('.my-alert')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    myalert.classList.toggle('d-none')
+                    form.reset()
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
