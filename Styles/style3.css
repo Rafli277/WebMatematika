@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Variable CSS */
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/*=== Colores ===*/
+:root {
+  --first-color: #4070f4;
+  --second-color: #0e2431;
+}
+
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+
+.bd__title {
+  text-align: center;
+  font-size: var(--big-font-size);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.bd__title-color {
+  color: var(--first-color);
+}
+
+.container {
+  display: flex;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.card, img {
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 600px){
+  .container {
+    flex-direction: column;
+  }
+}
+
+.head {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+html {
+  background-image: url(Asset/bgimage.png);
+}
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+h1, p {
+  font-family: var(--body-font);
+}
