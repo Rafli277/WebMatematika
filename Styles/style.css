@@ -55,6 +55,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #E5E8E8;
 }
 
 body {
@@ -105,7 +106,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: #E5E8E8;
 }
 
 .section {
@@ -342,8 +343,8 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
-  border: 5px solid rgb(1, 1, 1);
-  background-color: #fff;
+  border: 2px solid rgb(1, 1, 1);
+  background-color: #E5E8E8;
 }
 
 .work__img img {
@@ -380,7 +381,7 @@ img {
 /* footer */
 
 .footer {
-  background-color: var(--second-color);
+  background-color: #E5E8E8;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -487,4 +488,9 @@ img {
   .home__img {
     right: 10%;
   }
+}
+
+h3 {
+  font-weight: bold;
+  font-size: large;
 }

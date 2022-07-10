@@ -39,17 +39,21 @@
   justify-content: space-around;
   gap: 10px;
   padding: 10px;
-  background-color: aquamarine;
+  background-color: #fff;
 }
 
-.card, img {
-  background-color: white;
+.card,
+img {
+  background-color: #1F232C;
+  text-align: center;
   width: auto;
   height: auto;
   border-radius: 10px;
   padding: 5px 15px;
 }
-@media screen and (max-width: 600px){
+
+
+@media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
@@ -64,7 +68,7 @@
 }
 
 html {
-  background-image: url(bgimage.png);
+  background-color: #E5E8E8;
 }
 
 h1 {
@@ -76,6 +80,16 @@ h1 {
 img {
   text-align: center;
 }
-h1, p {
+
+h1,
+p {
   font-family: var(--body-font);
+  color: white;
+  text-align: left;
+}
+
+header {
+  background-color: #1F232C;
+  border-radius: 10px;
+
 }
