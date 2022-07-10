@@ -109,3 +109,28 @@ header {
   border-radius: 10px;
 
 }
+
+.btne {
+  text-align: center;
+  width: 4%;
+  height: 6%;
+  position: relative;
+  top: 10px !important;
+  left: 10px !important;
+  border-radius: 10px;
+  background-color: #fff;
+  color: rgb(255, 0, 0) !important;
+  transition-duration: 0.3s;
+}
+
+.btne:hover {
+  background-color: rgb(255, 2, 2) !important;
+  color: #fff !important;
+}
+
+.bx bx-exit {
+
+  font-size: 3rem;
+
+
+}

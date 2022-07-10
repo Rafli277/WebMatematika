@@ -68,3 +68,20 @@ button:focus {
     background-color: #8b9093;
     outline: none;
 }
+
+.btne {
+    text-align: center;
+    width: 5%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgb(255, 0, 0) !important;
+    transition-duration: 0.3s;
+}
+
+.btne:hover {
+    background-color: rgb(255, 2, 2) !important;
+    color: #fff !important;
+}
