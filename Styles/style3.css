@@ -64,7 +64,7 @@
 }
 
 html {
-  background-image: url(Asset/bgimage.png);
+  background-image: url(bgimage.png);
 }
 
 h1 {
@@ -73,6 +73,9 @@ h1 {
   font-weight: bolder;
 }
 
+img {
+  text-align: center;
+}
 h1, p {
   font-family: var(--body-font);
 }
