@@ -1,0 +1,35 @@
+.container {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  flex-direction: raw;
+  gap: 10px;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.card {
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+@media screen and {
+  max-width: 600px;
+  .container {
+    flex-direction: column;
+  }
+}
+
+.head {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+html {
+  background-image: url(Asset/bgimage.png);
+}
