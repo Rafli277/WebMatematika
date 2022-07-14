@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 /* Variable CSS */
 :root {
@@ -13,7 +13,7 @@
 }
 
 :root {
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -27,7 +27,7 @@
   color: #000;
 }
 
-.bd__title-color {
+.bd__title-color, .color-white {
   color: var(--first-color);
   font-size: var(--big-font-size);
 }
@@ -45,13 +45,12 @@
 }
 
 .card {
-  background-color: #1F232C;
+  background-color: #1f232c;
   text-align: center;
   width: auto;
   height: auto;
   border-radius: 10px;
   padding: 5px 15px;
-  cursor: pointer;
   transition-duration: 0.3s;
 }
 
@@ -65,7 +64,6 @@ img {
   background-color: var(--first-color);
   transition-duration: 0.3s;
 }
-
 
 @media screen and (max-width: 600px) {
   .container {
@@ -84,7 +82,7 @@ img {
 }
 
 html {
-  background-color: #E5E8E8;
+  background-color: #e5e8e8;
 }
 
 h1 {
@@ -105,9 +103,8 @@ p {
 }
 
 header {
-  background-color: #1F232C;
+  background-color: #1f232c;
   border-radius: 10px;
-
 }
 
 .btne {
@@ -116,11 +113,12 @@ header {
   height: 6%;
   position: relative;
   top: 10px !important;
-  left: 10px !important;
+  left: -47% !important;
   border-radius: 10px;
   background-color: #fff;
   color: rgb(255, 0, 0) !important;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .btne:hover {
@@ -129,8 +127,5 @@ header {
 }
 
 .bx bx-exit {
-
   font-size: 3rem;
-
-
 }
