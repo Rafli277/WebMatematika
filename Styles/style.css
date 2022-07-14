@@ -9,7 +9,7 @@
 
 /*=== Colores ===*/
 :root {
-  --first-color: #4070f4;
+  --first-color: #6988f9;
   --second-color: #0e2431;
 }
 
@@ -90,7 +90,8 @@ a:hover {
   transition-duration: 0.3s;
 }
 
-.nav__login, .nav__register {
+.nav__login,
+.nav__register {
   position: relative;
   left: 165%;
   text-decoration: none;
@@ -174,7 +175,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: #8b9093;
     transition: 0.5s;
   }
 }
@@ -199,7 +200,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: #8b9093;
 }
 
 .nav__logo {
@@ -378,7 +379,7 @@ img {
 
 .work__img a {
   background-color: #e5e8e8;
-  
+
 }
 
 .work__img img:hover {
